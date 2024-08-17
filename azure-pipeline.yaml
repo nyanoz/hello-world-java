@@ -1,0 +1,13 @@
+# build a pipeline based on a change
+trigger:
+- master
+
+# to run our code on a host  of virtual machines
+pool:
+  vmImage: ubuntu-latest
+
+# steps to be executed on 
+steps:
+- script: |
+    echo "Devsecops pipeline"
+  displayName: "Print Console for pipeline"
